@@ -13,7 +13,7 @@ load_dotenv()
 reading_agent = root_agent
 
 # ===== PART 1: Initialize Persistent Session Service =====
-DB_URL = os.getenv("ADK_DB_URL", "sqlite:///./reading_list.db")
+DB_URL = os.getenv("ADK_DB_URL", "sqlite+aiosqlite:///./reading_list.db")
 session_service = DatabaseSessionService(db_url=DB_URL)
 
 # ===== PART 2: Initial State (first run) =====

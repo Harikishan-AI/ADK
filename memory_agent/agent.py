@@ -233,7 +233,7 @@ def remove_item(index: int, tool_context: ToolContext) -> dict:
 # -----------------------------
 reading_agent = LlmAgent(
     name="reading_list_curator",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-pro",
     description="Curate a personal reading list with persistent memory.",
     instruction="""
 You are a friendly 'Reading List Curator'. The session state contains:
